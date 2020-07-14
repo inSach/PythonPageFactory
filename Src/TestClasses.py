@@ -33,6 +33,7 @@ class LoginTestCase(unittest.TestCase):
         HRM_MainPage().logout_HRM(driver)
         self.assertEqual(driver.title, "OrangeHRM", "Title is not matching")
 
+
     @classmethod
     def tearDownClass(cls):
         BrowserHandler().close_browser(cls.driver)
